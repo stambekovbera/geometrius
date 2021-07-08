@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="icon/brain.ico" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>GEOMETRIUS | Главная</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" id="myHeader">
+        <div class="container">
+          <div class="header__inner">
+            <div class="burger">
+              <span></span>
+            </div>
+            <a class="logo" href="index.html">
+              <img src="logos/logo-white.png" alt="GEOMETRIUS" />
+            </a>
+            <div class="search">
+              <div class="search__form">
+                <img src="img/search.svg" alt="" />
+                <input
+                  id="search__input"
+                  class="search__form-item"
+                  type="text"
+                  aria-label="Поисковая строка"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="top">
+          <div class="container">
+            <div class="top__inner">
+              <h1 class="top__title">
+                GEOMETRIUS - ГЕОМЕТРИЧЕСКИЙ КАЛЬКУЛЯТОР
+              </h1>
+              <p class="top__text">
+                Не знаете ничего в геометрии? Не беда. С помощью наших коллекций
+                геометрических калькуляторов каждый может выполнять и понимать
+                полезные геометрические вычисления за считанные секунды. Вам не
+                нравится вычислять площадь или периметр круга в ручную? С нашим
+                калькулятором вы будете делать это с удовольствием! Наш
+                геометрический калькулятор разработан так, чтобы люди с разным
+                уровнем геометрических знаний могли легко решать сложные задачи.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="bottom">
+          <div class="container">
+            <div class="bottom__inner">
+              <h2 class="bottom__title flat">Плоские фигуры</h2>
+              <div class="bottom__slider">
+                <div class="slider__item triangle">
+                  <h3 class="slider__title">Треугольник</h3>
+                  <p class="slider__text">
+                    геометрическая фигура, образованная тремя отрезками, которые
+                    соединяют три точки, не лежащие на одной прямой. Указанные
+                    три точки называются вершинами треугольника, а отрезки —
+                    сторонами треугольника.
+                  </p>
+                  <div class="slider__menu">
+                    <a
+                      class="slider__menu-link square-link"
+                      href="calculate/triangle_calc_square.html"
+                      >Площадь</a
+                    >
+                    <a
+                      class="slider__menu-link perimetr-link"
+                      href="calculate/triangle_calc_perimetr.html"
+                      >Периметр</a
+                    >
+                    <a
+                      class="slider__menu-link more-link"
+                      href="triangle_info.html"
+                      >Еще</a
+                    >
+                  </div>
+                </div>
+                <div class="slider__item square">
+                  <h3 class="slider__title">Квадрат</h3>
+                  <p class="slider__text">
+                    правильный четырёхугольник, то есть четырёхугольник, у
+                    которого все углы равны и все стороны равны. Квадрат
+                    является одновременно частным случаем ромба и
+                    прямоугольника.
+                  </p>
+                  <div class="slider__menu">
+                    <a
+                      class="slider__menu-link square-link"
+                      href="calculate/square_calc_square.html"
+                      >Площадь</a
+                    >
+                    <a
+                      class="slider__menu-link perimetr-link"
+                      href="calculate/square_calc_perimetr.html"
+                      >Периметр</a
+                    >
+                    <a
+                      class="slider__menu-link more-link"
+                      href="square_info.html"
+                      >Еще</a
+                    >
+                  </div>
+                </div>
+                <div class="slider__item rectangle">
+                  <h3 class="slider__title">Прямоугольник</h3>
+                  <p class="slider__text">
+                    четырёхугольник, у которого все углы прямые. В евклидовой
+                    геометрии для того, чтобы четырёхугольник был
+                    прямоугольником, достаточно, чтобы хотя бы три его угла были
+                    прямые, тогда четвёртый угол в силу теоремы о сумме углов
+                    многоугольника также будет равен 90°.
+                  </p>
+                  <div class="slider__menu">
+                    <a
+                      class="slider__menu-link square-link"
+                      href="calculate/rectangle_calc_square.html"
+                      >Площадь</a
+                    >
+                    <a
+                      class="slider__menu-link perimetr-link"
+                      href="calculate/rectangle_calc_perimetr.html"
+                      >Периметр</a
+                    >
+                    <a
+                      class="slider__menu-link more-link"
+                      href="rectangle_info.html"
+                      >Еще</a
+                    >
+                  </div>
+                </div>
+                <div class="slider__item circle">
+                  <h3 class="slider__title">Круг</h3>
+                  <p class="slider__text">
+                    часть плоскости, лежащая внутри окружности. Другими словами,
+                    это геометрическое место точек плоскости, расстояние от
+                    которых до заданной точки, называемой центром круга, не
+                    превышает заданного неотрицательного числа R. Число R
+                    называется радиусом этого круга.
+                  </p>
+                  <div class="slider__menu">
+                    <a
+                      class="slider__menu-link square-link"
+                      href="calculate/circle_calc_square.html"
+                      >Площадь</a
+                    >
+                    <a
+                      class="slider__menu-link perimetr-link"
+                      href="calculate/circle_calc_perimetr.html"
+                      >Периметр</a
+                    >
+                    <a
+                      class="slider__menu-link more-link"
+                      href="circle_info.html"
+                      >Еще</a
+                    >
+                  </div>
+                </div>
+                <div class="slider__item rhombus">
+                  <h3 class="slider__title">Ромб</h3>
+                  <p class="slider__text">
+                    параллелограмм, у которого все стороны равны.
+                  </p>
+                  <div class="slider__menu">
+                    <a
+                      class="slider__menu-link square-link"
+                      href="calculate/rhombus_calc_square.html"
+                      >Площадь</a
+                    >
+                    <a
+                      class="slider__menu-link perimetr-link"
+                      href="calculate/rhombus_calc_perimetr.html"
+                      >Периметр</a
+                    >
+                    <a
+                      class="slider__menu-link more-link"
+                      href="rhombus_info.html"
+                      >Еще</a
+                    >
+                  </div>
+                </div>
+                <div class="slider__item parallelogram">
+                  <h3 class="slider__title">Параллелограмм</h3>
+                  <p class="slider__text">
+                    четырёхугольник, у которого противоположные стороны попарно
+                    параллельны, то есть лежат на параллельных прямых. Частными
+                    случаями параллелограмма являются прямоугольник, квадрат и
+                    ромб.
+                  </p>
+                  <div class="slider__menu">
+                    <a
+                      class="slider__menu-link square-link"
+                      href="calculate/parallelogram_calc_square.html"
+                      >Площадь</a
+                    >
+                    <a
+                      class="slider__menu-link perimetr-link"
+                      href="calculate/parallelogram_calc_perimetr.html"
+                      >Периметр</a
+                    >
+                    <a
+                      class="slider__menu-link more-link"
+                      href="parallelogram_info.html"
+                      >Еще</a
+                    >
+                  </div>
+                </div>
+                <div class="slider__item trapezoid">
+                  <h3 class="slider__title">Трапеция</h3>
+                  <p class="slider__text">
+                    выпуклый четырёхугольник, у которого две стороны
+                    параллельны, а две другие стороны не параллельны. Иногда в
+                    определении трапеции опускают последнее условие.
+                    Параллельные противоположные стороны называются основаниями
+                    трапеции, а две другие — боковыми сторонами.
+                  </p>
+                  <div class="slider__menu">
+                    <a
+                      class="slider__menu-link square-link"
+                      href="calculate/trapezoid_calc_square.html"
+                      >Площадь</a
+                    >
+                    <a
+                      class="slider__menu-link perimetr-link"
+                      href="calculate/trapezoid_calc_perimetr.html"
+                      >Периметр</a
+                    >
+                    <a
+                      class="slider__menu-link more-link"
+                      href="trapezoid_info.html"
+                      >Еще</a
+                    >
+                  </div>
+                </div>
+                <div class="slider__item ellipse">
+                  <h3 class="slider__title">Эллипс</h3>
+                  <p class="slider__text">
+                    замкнутая кривая на плоскости, которая может быть получена
+                    как пересечение плоскости и кругового цилиндра или как
+                    ортогональная проекция окружности на плоскость. Окружность
+                    является частным случаем эллипса.
+                  </p>
+                  <div class="slider__menu">
+                    <a
+                      class="slider__menu-link square-link"
+                      href="calculate/ellipse_calc_square.html"
+                      >Площадь</a
+                    >
+                    <a
+                      class="slider__menu-link more-link"
+                      href="ellipse_info.html"
+                      >Еще</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__copyright">
+          <p>Курсовой проект, Стамбеков Берадор 2021г.</p>
+        </div>
+      </footer>
+    </div>
+    <div class="left__sidebar">
+      <div class="container">
+        <div class="sidebar__inner">
+          <ul class="sidebar__menu">
+            <h2 class="sidebar__title">Плоские фигуры</h2>
+            <li>
+              <a class="menu-link" href="triangle_info.html">Треугольник</a>
+            </li>
+            <li><a class="menu-link" href="square_info.html">Квадрат</a></li>
+            <li>
+              <a class="menu-link" href="rectangle_info.html">Прямоугольник</a>
+            </li>
+            <li><a class="menu-link" href="circle_info.html">Круг</a></li>
+            <li><a class="menu-link" href="rhombus_info.html">Ромб</a></li>
+            <li>
+              <a class="menu-link" href="parallelogram_info.html"
+                >Параллелограмм</a
+              >
+            </li>
+            <li>
+              <a class="menu-link" href="trapezoid_info.html">Трапеция</a>
+            </li>
+            <li><a class="menu-link" href="ellipse_info.html">Эллипс</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="search__nav">
+      <ul class="search__nav-menu">
+        <li>
+          <a
+            href="calculate/triangle_calc_square.html"
+            class="search__nav-menu-link"
+            >Площадь треугольника</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/triangle_calc_perimetr.html"
+            class="search__nav-menu-link"
+            >Периметр треугольника</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/triangle_calc_mediana.html"
+            class="search__nav-menu-link"
+            >Медиана треугольника</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/righttriangle_calc_square.html"
+            class="search__nav-menu-link"
+            >Площадь прямоугольного треугольника</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/isoscelestriangle_calc_square.html"
+            class="search__nav-menu-link"
+            >Площадь равнобедренного треугольника</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/square_calc_square.html"
+            class="search__nav-menu-link"
+            >Площадь квадрата</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/square_calc_perimetr.html"
+            class="search__nav-menu-link"
+            >Периметр квадрата</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/square_calc_diagonal.html"
+            class="search__nav-menu-link"
+            >Диагональ квадрата</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/rectangle_calc_square.html"
+            class="search__nav-menu-link"
+            >Площадь прямоугольника</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/rectangle_calc_perimetr.html"
+            class="search__nav-menu-link"
+            >Периметр прямоугольника</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/rectangle_calc_diagonal.html"
+            class="search__nav-menu-link"
+            >Диагональ прямоугольника</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/circle_calc_square.html"
+            class="search__nav-menu-link"
+            >Площадь круга</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/circle_calc_perimetr.html"
+            class="search__nav-menu-link"
+            >Периметр круга</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/circle_calc_diametr.html"
+            class="search__nav-menu-link"
+            >Диаметр круга</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/circle_calc_radius.html"
+            class="search__nav-menu-link"
+            >Радиус круга</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/rhombus_calc_square.html"
+            class="search__nav-menu-link"
+            >Площадь ромба</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/rhombus_calc_perimetr.html"
+            class="search__nav-menu-link"
+            >Периметр ромба</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/rhombus_calc_diagonal.html"
+            class="search__nav-menu-link"
+            >Диагональ ромба</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/parallelogram_calc_square.html"
+            class="search__nav-menu-link"
+            >Площадь параллелограмма</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/parallelogram_calc_perimetr.html"
+            class="search__nav-menu-link"
+            >Периметр параллелограмма</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/parallelogram_calc_diagonal.html"
+            class="search__nav-menu-link"
+            >Диагональ параллелограмма</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/trapezoid_calc_square.html"
+            class="search__nav-menu-link"
+            >Площадь трапеции</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/trapezoid_calc_perimetr.html"
+            class="search__nav-menu-link"
+            >Периметр трапеции</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/trapezoid_calc_diagonal.html"
+            class="search__nav-menu-link"
+            >Диагональ трапеции</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/trapezoid_calc_inradius.html"
+            class="search__nav-menu-link"
+            >Радиус вписанной окружности в трапецию</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/ellipse_calc_square.html"
+            class="search__nav-menu-link"
+            >Площадь эллипса</a
+          >
+        </li>
+        <li>
+          <a
+            href="calculate/ellipse_calc_perimetr.html"
+            class="search__nav-menu-link"
+            >Периметр эллипса</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script src="js/slick.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/search.js"></script>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../icon/brain.ico" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>GEOMETRIUS | Площадь эллипса</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header-second" id="myHeader">
+        <div class="container">
+          <div class="header__inner">
+            <div class="burger">
+              <span></span>
+            </div>
+            <a class="logo" href="../index.html">
+              <img src="../logos/logo-white.png" alt="GEOMETRIUS" />
+            </a>
+            <div class="search">
+              <div class="search__form">
+                <img src="../img/search.svg" alt="" />
+                <input
+                  id="search__input"
+                  class="search__form-item"
+                  type="text"
+                  aria-label="Поисковая строка"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="content">
+          <div class="container">
+            <div class="content__inner">
+              <div class="content__row">
+                <div class="content__fixed">
+                  <div class="content__calc">
+                    <div class="calc__img">
+                      <img src="../img/areaellipse.png" alt="Площадь эллипса" />
+                      <img
+                        src="../img/areaellipseformule.png"
+                        alt="Формула площади эллипса"
+                      />
+                    </div>
+                    <div class="calc__nav">
+                      <div class="a__site">
+                        <label>Полуось (a)</label>
+                        <input
+                          maxlength="10"
+                          class="input__a"
+                          id="a"
+                          type="text"
+                          onkeypress="validate(event)"
+                        />
+                      </div>
+                      <div class="b__site">
+                        <label>Полуось (b)</label>
+                        <input
+                          maxlength="10"
+                          class="input__b"
+                          id="b"
+                          type="text"
+                          onkeypress="validate(event)"
+                        />
+                      </div>
+                      <div class="calc__result">
+                        <label>Площадь (S)</label>
+                        <input
+                          class="input__res"
+                          id="res"
+                          type="text"
+                          readonly
+                        />
+                      </div>
+                    </div>
+                    <button class="exit__btn">
+                      <a href="../ellipse_info.html">Назад</a>
+                    </button>
+                  </div>
+                </div>
+                <div class="content__info">
+                  <div class="content__info-title">ПЛОЩАДЬ эллипса</div>
+                  <div class="content__info-content">
+                    Эллипс представляет собой ортогональную проекцию окружности
+                    на плоскость или сечение цилиндра. Поскольку в участии при
+                    графическом создании эллипса задействованы два радиуса
+                    окружностей – малый и большой, или как их еще называют для
+                    эллипса – малая и большая полуоси, то естественно они
+                    участвуют и при подсчете площади. Их произведение вместе с
+                    числом π дает площадь эллипса.
+                  </div>
+                  <div class="content__info-img">
+                    <img src="../img/areaellipseformule.png" alt="" />
+                  </div>
+                  <div class="content__info-content">
+                    где a — малая полуось, а b — большая полуось.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__copyright">
+          <p>Курсовой проект, Стамбеков Берадор 2021г.</p>
+        </div>
+      </footer>
+    </div>
+
+    <div class="left__sidebar">
+      <div class="container">
+        <div class="sidebar__inner">
+          <ul class="sidebar__menu">
+            <h2 class="sidebar__title">Плоские фигуры</h2>
+            <li>
+              <a class="menu-link" href="../triangle_info.html">Треугольник</a>
+            </li>
+            <li><a class="menu-link" href="../square_info.html">Квадрат</a></li>
+            <li>
+              <a class="menu-link" href="../rectangle_info.html"
+                >Прямоугольник</a
+              >
+            </li>
+            <li><a class="menu-link" href="../circle_info.html">Круг</a></li>
+            <li><a class="menu-link" href="../rhombus_info.html">Ромб</a></li>
+            <li>
+              <a class="menu-link" href="../parallelogram_info.html"
+                >Параллелограмм</a
+              >
+            </li>
+            <li>
+              <a class="menu-link" href="../trapezoid_info.html">Трапеция</a>
+            </li>
+            <li><a class="menu-link" href="../ellipse_info.html">Эллипс</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="search__nav">
+      <ul class="search__nav-menu">
+        <li>
+          <a href="triangle_calc_square.html" class="search__nav-menu-link"
+            >Площадь треугольника</a
+          >
+        </li>
+        <li>
+          <a href="triangle_calc_perimetr.html" class="search__nav-menu-link"
+            >Периметр треугольника</a
+          >
+        </li>
+        <li>
+          <a href="triangle_calc_mediana.html" class="search__nav-menu-link"
+            >Медиана треугольника</a
+          >
+        </li>
+        <li>
+          <a href="righttriangle_calc_square.html" class="search__nav-menu-link"
+            >Площадь прямоугольного треугольника</a
+          >
+        </li>
+        <li>
+          <a
+            href="isoscelestriangle_calc_square.html"
+            class="search__nav-menu-link"
+            >Площадь равнобедренного треугольника</a
+          >
+        </li>
+        <li>
+          <a href="square_calc_square.html" class="search__nav-menu-link"
+            >Площадь квадрата</a
+          >
+        </li>
+        <li>
+          <a href="square_calc_perimetr.html" class="search__nav-menu-link"
+            >Периметр квадрата</a
+          >
+        </li>
+        <li>
+          <a href="square_calc_diagonal.html" class="search__nav-menu-link"
+            >Диагональ квадрата</a
+          >
+        </li>
+        <li>
+          <a href="rectangle_calc_square.html" class="search__nav-menu-link"
+            >Площадь прямоугольника</a
+          >
+        </li>
+        <li>
+          <a href="rectangle_calc_perimetr.html" class="search__nav-menu-link"
+            >Периметр прямоугольника</a
+          >
+        </li>
+        <li>
+          <a href="rectangle_calc_diagonal.html" class="search__nav-menu-link"
+            >Диагональ прямоугольника</a
+          >
+        </li>
+        <li>
+          <a href="circle_calc_square.html" class="search__nav-menu-link"
+            >Площадь круга</a
+          >
+        </li>
+        <li>
+          <a href="circle_calc_perimetr.html" class="search__nav-menu-link"
+            >Периметр круга</a
+          >
+        </li>
+        <li>
+          <a href="circle_calc_diametr.html" class="search__nav-menu-link"
+            >Диаметр круга</a
+          >
+        </li>
+        <li>
+          <a href="circle_calc_radius.html" class="search__nav-menu-link"
+            >Радиус круга</a
+          >
+        </li>
+        <li>
+          <a href="rhombus_calc_square.html" class="search__nav-menu-link"
+            >Площадь ромба</a
+          >
+        </li>
+        <li>
+          <a href="rhombus_calc_perimetr.html" class="search__nav-menu-link"
+            >Периметр ромба</a
+          >
+        </li>
+        <li>
+          <a href="rhombus_calc_diagonal.html" class="search__nav-menu-link"
+            >Диагональ ромба</a
+          >
+        </li>
+        <li>
+          <a href="parallelogram_calc_square.html" class="search__nav-menu-link"
+            >Площадь параллелограмма</a
+          >
+        </li>
+        <li>
+          <a
+            href="parallelogram_calc_perimetr.html"
+            class="search__nav-menu-link"
+            >Периметр параллелограмма</a
+          >
+        </li>
+        <li>
+          <a
+            href="parallelogram_calc_diagonal.html"
+            class="search__nav-menu-link"
+            >Диагональ параллелограмма</a
+          >
+        </li>
+        <li>
+          <a href="trapezoid_calc_square.html" class="search__nav-menu-link"
+            >Площадь трапеции</a
+          >
+        </li>
+        <li>
+          <a href="trapezoid_calc_perimetr.html" class="search__nav-menu-link"
+            >Периметр трапеции</a
+          >
+        </li>
+        <li>
+          <a href="trapezoid_calc_diagonal.html" class="search__nav-menu-link"
+            >Диагональ трапеции</a
+          >
+        </li>
+        <li>
+          <a href="trapezoid_calc_inradius.html" class="search__nav-menu-link"
+            >Радиус вписанной окружности в трапецию</a
+          >
+        </li>
+        <li>
+          <a href="ellipse_calc_square.html" class="search__nav-menu-link"
+            >Площадь эллипса</a
+          >
+        </li>
+        <li>
+          <a href="ellipse_calc_perimetr.html" class="search__nav-menu-link"
+            >Периметр эллипса</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/calc.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/square_ellipse.js"></script>
+  </body>
+</html>

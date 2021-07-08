@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../icon/brain.ico" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>GEOMETRIUS | Диагональ трапеции</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header-second" id="myHeader">
+        <div class="container">
+          <div class="header__inner">
+            <div class="burger">
+              <span></span>
+            </div>
+            <a class="logo" href="../index.html">
+              <img src="../logos/logo-white.png" alt="GEOMETRIUS" />
+            </a>
+            <div class="search">
+              <div class="search__form">
+                <img src="../img/search.svg" alt="" />
+                <input
+                  id="search__input"
+                  class="search__form-item"
+                  type="text"
+                  aria-label="Поисковая строка"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="content">
+          <div class="container">
+            <div class="content__inner">
+              <div class="content__row">
+                <div class="content__fixed">
+                  <div class="content__calc">
+                    <div class="calc__img">
+                      <img
+                        src="../img/diagonaltrapezoid.png"
+                        alt="Диагональ трапеции"
+                      />
+                      <img
+                        src="../img/diagonaltrapezoidformule.png"
+                        alt="Формула диагонали трапеции"
+                      />
+                    </div>
+                    <div class="calc__nav">
+                      <div class="a__site">
+                        <label>Сторона (a)</label>
+                        <input
+                          maxlength="10"
+                          class="input__a"
+                          id="a"
+                          type="text"
+                          onkeypress="validate(event)"
+                        />
+                      </div>
+                      <div class="b__site">
+                        <label>Сторона (b)</label>
+                        <input
+                          maxlength="10"
+                          class="input__b"
+                          id="b"
+                          type="text"
+                          onkeypress="validate(event)"
+                        />
+                      </div>
+                      <div class="c__site">
+                        <label>Сторона (c)</label>
+                        <input
+                          maxlength="10"
+                          class="input__c"
+                          id="c"
+                          type="text"
+                          onkeypress="validate(event)"
+                        />
+                      </div>
+                      <div class="d__site">
+                        <label>Сторона (d)</label>
+                        <input
+                          maxlength="10"
+                          class="input__d"
+                          id="d"
+                          type="text"
+                          onkeypress="validate(event)"
+                        />
+                      </div>
+                      <div class="calc__result">
+                        <label>Диагональ (d1)</label>
+                        <input
+                          class="input__res"
+                          id="d1"
+                          type="text"
+                          readonly
+                        />
+                      </div>
+                      <div class="calc__result">
+                        <label>Диагональ (d2)</label>
+                        <input
+                          class="input__res"
+                          id="d2"
+                          type="text"
+                          readonly
+                        />
+                      </div>
+                    </div>
+                    <button class="exit__btn">
+                      <a href="../trapezoid_info.html">Назад</a>
+                    </button>
+                  </div>
+                </div>
+                <div class="content__info">
+                  <div class="content__info-title">Диагональ трапеции</div>
+                  <div class="content__info-content">
+                    Можно вычислить диагональ трапеции через стороны. Для этого
+                    необходимо знать все четыре стороны. Выведение этой формулы
+                    основано на параллельности оснований трапеции, и
+                    прямоугольными треугольниками, которые образует высота,
+                    проведенная из вершин верхнего основания:
+                  </div>
+                  <div class="content__info-img">
+                    <img src="../img/diagonaltrapezoidformule.png" alt="" />
+                  </div>
+                  <div class="content__info-content">
+                    где a, b, c и d — стороны трапеции.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__copyright">
+          <p>Курсовой проект, Стамбеков Берадор 2021г.</p>
+        </div>
+      </footer>
+    </div>
+
+    <div class="left__sidebar">
+      <div class="container">
+        <div class="sidebar__inner">
+          <ul class="sidebar__menu">
+            <h2 class="sidebar__title">Плоские фигуры</h2>
+            <li>
+              <a class="menu-link" href="../triangle_info.html">Треугольник</a>
+            </li>
+            <li><a class="menu-link" href="../square_info.html">Квадрат</a></li>
+            <li>
+              <a class="menu-link" href="../rectangle_info.html"
+                >Прямоугольник</a
+              >
+            </li>
+            <li><a class="menu-link" href="../circle_info.html">Круг</a></li>
+            <li><a class="menu-link" href="../rhombus_info.html">Ромб</a></li>
+            <li>
+              <a class="menu-link" href="../parallelogram_info.html"
+                >Параллелограмм</a
+              >
+            </li>
+            <li>
+              <a class="menu-link" href="../trapezoid_info.html">Трапеция</a>
+            </li>
+            <li><a class="menu-link" href="../ellipse_info.html">Эллипс</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="search__nav">
+      <ul class="search__nav-menu">
+        <li>
+          <a href="triangle_calc_square.html" class="search__nav-menu-link"
+            >Площадь треугольника</a
+          >
+        </li>
+        <li>
+          <a href="triangle_calc_perimetr.html" class="search__nav-menu-link"
+            >Периметр треугольника</a
+          >
+        </li>
+        <li>
+          <a href="triangle_calc_mediana.html" class="search__nav-menu-link"
+            >Медиана треугольника</a
+          >
+        </li>
+        <li>
+          <a href="righttriangle_calc_square.html" class="search__nav-menu-link"
+            >Площадь прямоугольного треугольника</a
+          >
+        </li>
+        <li>
+          <a
+            href="isoscelestriangle_calc_square.html"
+            class="search__nav-menu-link"
+            >Площадь равнобедренного треугольника</a
+          >
+        </li>
+        <li>
+          <a href="square_calc_square.html" class="search__nav-menu-link"
+            >Площадь квадрата</a
+          >
+        </li>
+        <li>
+          <a href="square_calc_perimetr.html" class="search__nav-menu-link"
+            >Периметр квадрата</a
+          >
+        </li>
+        <li>
+          <a href="square_calc_diagonal.html" class="search__nav-menu-link"
+            >Диагональ квадрата</a
+          >
+        </li>
+        <li>
+          <a href="rectangle_calc_square.html" class="search__nav-menu-link"
+            >Площадь прямоугольника</a
+          >
+        </li>
+        <li>
+          <a href="rectangle_calc_perimetr.html" class="search__nav-menu-link"
+            >Периметр прямоугольника</a
+          >
+        </li>
+        <li>
+          <a href="rectangle_calc_diagonal.html" class="search__nav-menu-link"
+            >Диагональ прямоугольника</a
+          >
+        </li>
+        <li>
+          <a href="circle_calc_square.html" class="search__nav-menu-link"
+            >Площадь круга</a
+          >
+        </li>
+        <li>
+          <a href="circle_calc_perimetr.html" class="search__nav-menu-link"
+            >Периметр круга</a
+          >
+        </li>
+        <li>
+          <a href="circle_calc_diametr.html" class="search__nav-menu-link"
+            >Диаметр круга</a
+          >
+        </li>
+        <li>
+          <a href="circle_calc_radius.html" class="search__nav-menu-link"
+            >Радиус круга</a
+          >
+        </li>
+        <li>
+          <a href="rhombus_calc_square.html" class="search__nav-menu-link"
+            >Площадь ромба</a
+          >
+        </li>
+        <li>
+          <a href="rhombus_calc_perimetr.html" class="search__nav-menu-link"
+            >Периметр ромба</a
+          >
+        </li>
+        <li>
+          <a href="rhombus_calc_diagonal.html" class="search__nav-menu-link"
+            >Диагональ ромба</a
+          >
+        </li>
+        <li>
+          <a href="parallelogram_calc_square.html" class="search__nav-menu-link"
+            >Площадь параллелограмма</a
+          >
+        </li>
+        <li>
+          <a
+            href="parallelogram_calc_perimetr.html"
+            class="search__nav-menu-link"
+            >Периметр параллелограмма</a
+          >
+        </li>
+        <li>
+          <a
+            href="parallelogram_calc_diagonal.html"
+            class="search__nav-menu-link"
+            >Диагональ параллелограмма</a
+          >
+        </li>
+        <li>
+          <a href="trapezoid_calc_square.html" class="search__nav-menu-link"
+            >Площадь трапеции</a
+          >
+        </li>
+        <li>
+          <a href="trapezoid_calc_perimetr.html" class="search__nav-menu-link"
+            >Периметр трапеции</a
+          >
+        </li>
+        <li>
+          <a href="trapezoid_calc_diagonal.html" class="search__nav-menu-link"
+            >Диагональ трапеции</a
+          >
+        </li>
+        <li>
+          <a href="trapezoid_calc_inradius.html" class="search__nav-menu-link"
+            >Радиус вписанной окружности в трапецию</a
+          >
+        </li>
+        <li>
+          <a href="ellipse_calc_square.html" class="search__nav-menu-link"
+            >Площадь эллипса</a
+          >
+        </li>
+        <li>
+          <a href="ellipse_calc_perimetr.html" class="search__nav-menu-link"
+            >Периметр эллипса</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/calc.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/diagonal_trapezoid.js"></script>
+  </body>
+</html>
